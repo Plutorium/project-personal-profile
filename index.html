@@ -6,134 +6,107 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Jose | Github Profile</title>
     <style>
-        Header {
-            align-items: center;
+        header {
             text-align: center;
         }
-
-        Table {
-            text-align: Center;
-            align-items: Center;
-            width: 50%;
-            height: 200px;
+        table { 
+            margin: auto;
+            text-align: center;
+            width: 75%;
+        }
+        th, td {
+            padding: 15px;
         }
     </style>
 </head>
 
 <body>
     <div>
+        <!-- Header section-->
         <header>
-            <img src="Nature.jpg" alt="Standing under a brigde near hike trail" style="width: 200px; height:auto">
+            <img src="Nature.jpg" alt="Standing under a brigde near hike trail" style="width: 200px; height:auto;">
             <h1>&#128075; Hi, My name is Jose!</h1>
-            <p><em>Bodybuilder, Dog dad, Coding Enthusiast, & Aiming to Live a happy and simple Life </p>
-            </em></p>
+            <p><em>Bodybuilder, Dog dad, Coding Enthusiast, & Aiming to Live a happy and simple Life</p></em></p>
         </header>
     </div>
     <hr>
+
+    <!--About Me Section-->
     <div>
         <h2>About Me</h2>
-        <!--
-   add table 
-   -->
-        <table>
+        <table border="1">
             <tbody>
                 <tr>
-                    <td style="background-color:orange;">
-                        <strong> Age: </strong>
-                    </td>
-                    <td Style="background-color: lightgrey;">
-                        26
-                    </td>
+                    <td bgcolor="orange"><strong>Age:</strong></td>
+                    <td bgcolor="lightgrey">26</td>
                 </tr>
                 <tr>
-                    <td style="background-color:orange;">
-                        <strong> Location: </strong>
-                    </td>
-                    <td>
-                        Cranston, RI
-                    </td>
+                    <td bgcolor="orange"><strong>Location:</strong></td>
+                    <td>Cranston, RI</td>
                 </tr>
                 <tr>
-                    <td style="background-color:orange;">
-                        <strong> Occupation: </strong>
-                    </td>
-                    <td style="background-color: lightgrey;">
-                        Student Developer, Uber Driver, Personal Trainer
-                    </td>
+                    <td bgcolor="orange"><strong>Occupation:</strong></td>
+                    <td bgcolor="lightgrey">Student Developer, Uber Driver, Personal Trainer</td>
                 </tr>
             </tbody>
-
-
         </table>
-        <h3>Quick Facts</h3>
-        <ul>
-            <li>&#128483;Speak 3 Languages</li>
-            <li>&#128151;I have been Married</li>
-            <li>&#127931;Violinist Apprentice</li>
-            <li>&#128641;I Sky Dived Twice</li>
-        </ul>
-        <hr>
-        <h2>My Favorites</h2>
-        <!--
-    add table    
-    -->
 
-        <table>
-            <thead style="background-color:orange" cellpadding="20px">
+        <!--Quick Facts Section-->
+            <h3>Quick Facts</h3>
+        <ul>
+            <li>&#128483; Speak 3 Languages</li>
+            <li>&#128151; I have been Married</li>
+            <li>&#127931; Violinist Apprentice</li>
+            <li>&#128641; I Sky Dived Twice</li>
+        </ul>
+        </div>
+        <hr>
+
+        <!--My Favorites Section-->
+        <h2>My Favorites</h2>
+        <table border="1">
+            <thead bgcolor="orange">
                 <tr>
-                    <th>
-                        Category
-                    </th>
-                    <th>
-                        Favorites
-                    </th>
+                    <th>Category</th>
+                    <th>Favorites</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style="background-color:orange;">
-                        <strong> Movies</strong>
-                    </td>
-                    <td style="background-color:lightgrey;">
-                        Spirited Away, Pirates of The Caribbean, Last Holiday
-                    </td>
+                    <td bgcolor="orange"><strong>Movies</strong></td>
+                    <td bgcolor="lightgrey">Spirited Away, Pirates of The Caribbean, Last Holiday</td>
                 </tr>
                 <tr>
-                    <td style="background-color:orange">
-                        <strong> Food </strong>
-                    </td>
-                    <td>
-                        Ramen, White Pasta, Pastries
-                    </td>
+                    <td bgcolor="orange"><strong>Food</strong></td>
+                    <td>Ramen, White Pasta, Pastries</td>
                 </tr>
                 <tr>
-                    <td style="background-color:orange;">
-                        <strong> Hobbies </strong>
-                    </td>
-                    <td style="background-color:lightgray;">
+                    <td bgcolor="orange"><strong>Hobbies</strong></td>
+                    <td bgcolor="lightgrey">
                         Raed, Workout, Play the Violin, Hiking, Coding (as of recent), Coooking
                     </td>
                 </tr>
-
             </tbody>
-
-
         </table>
-    </div>
     <hr>
-    <div>
-        <h2>Say Hello!</h2>
-        <p>
+</div>
+
+<!-- Contact Forms Section -->
+<div>
+    <h2>Say Hello!</h2>
+    <form action="submit_form.html" method="post">
         <p>Contact Form</p>
-        <p>Name: <br><input></p>
-        <p>Email:<br> <input></p>
-        <p>Message: <br><input style="width:300px; height:100px;"></p>
-        <p><button>Send &#9756;</button></p>
-        </p>
-    </div>
+        <p>Name:<br><input type="text" name="name" required></p>
+        <p>Email:<br><input type="email" name="email" required></p>
+        <p>Message:<br><textarea name="message" style="width: 300px; height: 100px;" required></textarea></p>
+        <p><button type="submit">Send &#9756;</button></p>
+    </form>
+</div>
     <hr>
+
+    <!--Contact Information-->
     <div style="text-align:Center;">
-        <a href="Jcosteestevez@gmail.com">Jcosteestevez@gmail.com</a>
+        <a href="mailto:Jcosteestevez@gmail.com">Jcosteestevez@gmail.com</a>
         <p>@Plutorium</p>
 </div>
 </body>
